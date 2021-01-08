@@ -90,12 +90,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@feedloop/qore-cli@^0.1.12":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@feedloop/qore-cli/-/qore-cli-0.1.12.tgz#c3e17a4cae84346d6d90e5ca5bb66d758711716d"
-  integrity sha512-bKMB9rKexFvp2ATyINVMaD7WPE56nr+NL6vs5MVDP6j94QKAfToxsFSh9nlK29Ta2xb61sSWlwbFUpjulqXkeA==
+"@feedloop/qore-cli@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@feedloop/qore-cli/-/qore-cli-0.1.16.tgz#64772fee11647f9f6b779c03bef1a2deb39f9deb"
+  integrity sha512-SaMvkKtWsErxanXN1hvYZTS7tfjrXdA1Q5NUP39d5G2uDbVEs5muAwaTbvFkgJ3hR+6zqDeYlZJDO+XvUIfW0A==
   dependencies:
-    "@feedloop/qore-sdk" "^0.1.1"
+    "@feedloop/qore-sdk" "^0.1.5"
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^3"
@@ -144,10 +144,17 @@
   dependencies:
     typescript "^4.1.2"
 
-"@feedloop/qore-sdk@^0.1.1", "@feedloop/qore-sdk@^0.1.2":
+"@feedloop/qore-sdk@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@feedloop/qore-sdk/-/qore-sdk-0.1.2.tgz#3870c6ef15c548d04b2a88a058c12258a2ab7ba8"
   integrity sha512-tW0mDq1ep++zN3p6f06qKGj+rAWQDM9+Gv5gwXy7UTE96YzKtws4apI0pyHaRxSN1bISYCi8oxG884GDsmYZtA==
+  dependencies:
+    axios "^0.21.0"
+
+"@feedloop/qore-sdk@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@feedloop/qore-sdk/-/qore-sdk-0.1.5.tgz#f375e68be20fbcaf32a5a9f4165a6ae1526e15ea"
+  integrity sha512-DPAzVhqoUA5c1XaXtB+ihcjF8mV4KrglBmiJpYuMTJrD8xxlkPV//fH1czrqziU+UU2j1MBZiJrb02B7N9vZNQ==
   dependencies:
     axios "^0.21.0"
 

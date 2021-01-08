@@ -64,7 +64,15 @@
       "isAdmin": false,
       "isEditor": false,
       "isPublic": true,
-      "permissions": []
+      "permissions": [
+        {
+          "insert": true,
+          "select": true,
+          "update": true,
+          "delete": true,
+          "viewId": "todoDefaultView"
+        }
+      ]
     }
   ],
   "forms": [],
