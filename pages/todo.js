@@ -19,13 +19,14 @@ export default function Todo() {
             ref={inputRef}
             onKeyPress={async (e) => {
               if (e.key === "Enter" && status !== "loading") {
+                const value = e.currentTarget.value
+                inputRef.current.value = "";
                 await insertRow({
-                  name: e.currentTarget.value,
+                  name: value,
                   description: "",
                   done: false,
                 });
                 items.revalidate();
-                inputRef.current.value = "";
               }
             }}
             class="new-todo"
