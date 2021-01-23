@@ -10,6 +10,7 @@
           "name": "email",
           "type": "text",
           "deletionProtection": true,
+          "defaultValue": null,
           "id": "email",
           "displayField": true
         },
@@ -17,6 +18,7 @@
           "name": "role",
           "type": "role",
           "deletionProtection": true,
+          "defaultValue": null,
           "id": "role",
           "displayField": false
         }
@@ -31,6 +33,7 @@
           "name": "name",
           "type": "text",
           "deletionProtection": false,
+          "defaultValue": null,
           "id": "name",
           "displayField": true
         },
@@ -38,6 +41,7 @@
           "name": "description",
           "type": "text",
           "deletionProtection": false,
+          "defaultValue": null,
           "id": "description",
           "displayField": false
         },
@@ -45,6 +49,7 @@
           "name": "Done",
           "type": "boolean",
           "deletionProtection": false,
+          "defaultValue": "false",
           "id": "done",
           "displayField": false
         }
@@ -53,33 +58,40 @@
   ],
   "roles": [
     {
-      "name": "admin",
-      "isAdmin": true,
-      "isEditor": false,
-      "isPublic": false,
-      "permissions": []
-    },
-    {
       "name": "public",
       "isAdmin": false,
       "isEditor": false,
       "isPublic": true,
       "permissions": [
         {
+          "insert": false,
+          "select": false,
+          "update": false,
+          "delete": false,
+          "viewId": "allMember"
+        },
+        {
           "insert": true,
           "select": true,
           "update": true,
           "delete": true,
-          "viewId": "todoDefaultView"
+          "viewId": "allTodo"
         }
       ]
+    },
+    {
+      "name": "admin",
+      "isAdmin": true,
+      "isEditor": false,
+      "isPublic": false,
+      "permissions": []
     }
   ],
   "forms": [],
   "views": [
     {
-      "id": "memberDefaultView",
-      "name": "member Default View",
+      "id": "allMember",
+      "name": "All member",
       "tableId": "member",
       "parameters": [],
       "sorts": [],
@@ -88,6 +100,7 @@
           "name": "email",
           "type": "text",
           "deletionProtection": true,
+          "defaultValue": null,
           "id": "email",
           "displayField": true,
           "design": null
@@ -96,6 +109,7 @@
           "name": "role",
           "type": "role",
           "deletionProtection": true,
+          "defaultValue": null,
           "id": "role",
           "displayField": false,
           "design": null
@@ -104,8 +118,8 @@
       "design": null
     },
     {
-      "id": "todoDefaultView",
-      "name": "Todo Default View",
+      "id": "allTodo",
+      "name": "All Todo",
       "tableId": "todo",
       "parameters": [],
       "sorts": [],
@@ -114,6 +128,7 @@
           "name": "name",
           "type": "text",
           "deletionProtection": false,
+          "defaultValue": null,
           "id": "name",
           "displayField": true,
           "design": null
@@ -122,6 +137,7 @@
           "name": "description",
           "type": "text",
           "deletionProtection": false,
+          "defaultValue": null,
           "id": "description",
           "displayField": false,
           "design": null
@@ -130,6 +146,7 @@
           "name": "Done",
           "type": "boolean",
           "deletionProtection": false,
+          "defaultValue": "false",
           "id": "done",
           "displayField": false,
           "design": null

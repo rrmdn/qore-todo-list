@@ -17,6 +17,6 @@
     "todomvc-common": "^1.0.5"
   },
   "devDependencies": {
-    "@feedloop/qore-cli": "^0.1.16"
+    "@feedloop/qore-cli": "^0.1.19"
   }
 }

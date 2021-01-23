@@ -17,7 +17,7 @@ declare module "@feedloop/qore-client" {
     done: boolean;
   };
 
-  type MemberDefaultViewViewRow = {
+  type AllMemberViewRow = {
     read: {
       id: string;
       email: string;
@@ -30,7 +30,7 @@ declare module "@feedloop/qore-client" {
     actions: {};
   };
 
-  type TodoDefaultViewViewRow = {
+  type AllTodoViewRow = {
     read: {
       id: string;
       name: string;
@@ -47,7 +47,7 @@ declare module "@feedloop/qore-client" {
   };
 
   interface ProjectSchema extends QoreSchema {
-    memberDefaultView: MemberDefaultViewViewRow;
-    todoDefaultView: TodoDefaultViewViewRow;
+    allMember: AllMemberViewRow;
+    allTodo: AllTodoViewRow;
   }
 }
