@@ -12,8 +12,8 @@ export default function Todo() {
   const { updateRow } = qoreContext.views.allTodo.useUpdateRow();
   return (
     <>
-      <section class="todoapp">
-        <header class="header">
+      <section className="todoapp">
+        <header className="header">
           <h1>todos</h1>
           <input
             ref={inputRef}
@@ -29,19 +29,19 @@ export default function Todo() {
                 items.revalidate();
               }
             }}
-            class="new-todo"
+            className="new-todo"
             placeholder="What needs to be done?"
             autoFocus
           />
         </header>
-        <section class="main">
-          <ul class="todo-list">
+        <section className="main">
+          <ul className="todo-list">
             {(items.data || []).map((item) => (
-              <li key={item.id} class={item.done && "completed"}>
-                <div class="view">
+              <li key={item.id} className={item.done && "completed"}>
+                <div className="view">
                   <input
                     onChange
-                    class="toggle"
+                    className="toggle"
                     type="checkbox"
                     checked={item.done}
                     onChange={async (e) => {
@@ -53,14 +53,14 @@ export default function Todo() {
                   />
                   <label>{item.name}</label>
                   <button
-                    class="destroy"
+                    className="destroy"
                     onClick={async (e) => {
                       await deleteRow(item.id);
                       items.revalidate();
                     }}
                   ></button>
                 </div>
-                <input class="edit" value="Create a TodoMVC template" />
+                <input className="edit" value="Create a TodoMVC template" />
               </li>
             ))}
           </ul>

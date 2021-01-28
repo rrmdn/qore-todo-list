@@ -90,12 +90,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@feedloop/qore-cli@^0.1.19":
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/@feedloop/qore-cli/-/qore-cli-0.1.19.tgz#e827ece5084d5aee6df682af9de6a50b4d7e17a5"
-  integrity sha512-9OuQbA2vYjXrAGOBanNt0+Hpzqs3N1DkvYaD62PppnWEF5YwEJkx2trVOnZ6OBCC6STkbYAnGSZYp0Mg7D1NXQ==
+"@feedloop/qore-cli@^0.1.20":
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/@feedloop/qore-cli/-/qore-cli-0.1.20.tgz#3c43d4cda22ea27c197c370a192a4cd71a86596c"
+  integrity sha512-ni805fbAfklzPFqpxKd2kAklLh5GTC5g4MrqyHVRZBPIXt0k2dXsBH+dBG/YdwlainrpmBhe3QgjoZ4UfvcvFw==
   dependencies:
-    "@feedloop/qore-sdk" "^0.1.6"
+    "@feedloop/qore-sdk" "^0.1.7"
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^3"
@@ -121,12 +121,12 @@
     voca "^1.4.0"
     wonka "^4.0.15"
 
-"@feedloop/qore-client@^0.1.12":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@feedloop/qore-client/-/qore-client-0.1.12.tgz#e491b04605860f11c086233748fe41db88c213f4"
-  integrity sha512-Fz49vhkbc6B2sQ5S8ihDG1LjGzxJDWg4FnF9EO1WHwQsNAnp5g7pcexkdVanI7E5FIq3iFGRG1ClKhgcujbjKw==
+"@feedloop/qore-client@^0.1.21":
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/@feedloop/qore-client/-/qore-client-0.1.21.tgz#5243d2537016e67fd0e1f2b6f79953eb1a8cc25e"
+  integrity sha512-Wt7qhdguWlDosk0iFh8B0pwAVZIB5Ollmdta2yLusbXfPGfsCo7bToH6xx0kQWNzGHcG4hbFGSbVbc08hUjQPQ==
   dependencies:
-    "@feedloop/qore-sdk" "^0.1.2"
+    "@feedloop/qore-sdk" "^0.1.7"
     "@types/nock" "^11.1.0"
     axios "^0.21.0"
     immer "^8.0.0"
@@ -138,24 +138,18 @@
     type-fest "^0.20.1"
     wonka "^4.0.15"
 
-"@feedloop/qore-react@^0.1.12":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@feedloop/qore-react/-/qore-react-0.1.12.tgz#861170d713aa61e6abf6a7f6e189712977425ae2"
-  integrity sha512-n+Dq/TNcyNEuJ/4lGlzSlInF0s2ATJcM1w1rFLcCBASmO4lyE4RyTcpOr2n4KJKmX4MZkTarsgKsiG0ebM2mbg==
+"@feedloop/qore-react@^0.1.21":
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/@feedloop/qore-react/-/qore-react-0.1.21.tgz#ed7c07bd9536a408b7ea3e89395bae864daf78e9"
+  integrity sha512-kXqKUed2iYvNgt7kWgdVpYr0oLOO9aje/qTCIyAZJnYuXNfzDvtA0T349soewyazDRLfcYsTNvm3SaVE8eZyIw==
   dependencies:
+    type-fest "^0.20.2"
     typescript "^4.1.2"
 
-"@feedloop/qore-sdk@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@feedloop/qore-sdk/-/qore-sdk-0.1.2.tgz#3870c6ef15c548d04b2a88a058c12258a2ab7ba8"
-  integrity sha512-tW0mDq1ep++zN3p6f06qKGj+rAWQDM9+Gv5gwXy7UTE96YzKtws4apI0pyHaRxSN1bISYCi8oxG884GDsmYZtA==
-  dependencies:
-    axios "^0.21.0"
-
-"@feedloop/qore-sdk@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@feedloop/qore-sdk/-/qore-sdk-0.1.6.tgz#c276299421faa0364ae6cff29d8dbba4c66d3c66"
-  integrity sha512-aBTcs6OrmFWXIW3Y35mFwk4F/9JE+5XJXk/URRC4UeAyvZzA4Po6TwRcP5Lgo0uqFhDrdC9KcUU6YgjLp8WnKA==
+"@feedloop/qore-sdk@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@feedloop/qore-sdk/-/qore-sdk-0.1.7.tgz#e98c288e6998040fe43f446455835aa877f81e1c"
+  integrity sha512-YR3Xx6GOWMv0MVgbEAdsUeBvbsvFUgDvLQsBCs8xXXOp5LrB378mVop36KusRf2jTxUBVcqDilT3PCR4+si2sA==
   dependencies:
     axios "^0.21.0"
 
@@ -4501,7 +4495,7 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-type-fest@^0.20.1:
+type-fest@^0.20.1, type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
