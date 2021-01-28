@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@feedloop/qore-client": "^0.1.21",
-    "@feedloop/qore-react": "^0.1.21",
+    "@feedloop/qore-client": "^0.1.22",
+    "@feedloop/qore-react": "^0.1.22",
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",

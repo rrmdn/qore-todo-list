@@ -2,14 +2,14 @@ import React from "react";
 import qoreContext from "../qoreContext";
 
 export default function Todo() {
-  const items = qoreContext.views.allTodo.useListRow();
+  const items = qoreContext.view("allTodo").useListRow();
   const {
     insertRow,
     status,
-  } = qoreContext.views.allTodo.useInsertRow();
+  } = qoreContext.view("allTodo").useInsertRow();
   const inputRef = React.useRef(null);
-  const { deleteRow } = qoreContext.views.allTodo.useDeleteRow();
-  const { updateRow } = qoreContext.views.allTodo.useUpdateRow();
+  const { deleteRow } = qoreContext.view("allTodo").useDeleteRow();
+  const { updateRow } = qoreContext.view("allTodo").useUpdateRow();
   return (
     <>
       <section className="todoapp">
